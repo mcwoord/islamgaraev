@@ -1,0 +1,456 @@
+/* 1024 - 1229 */
+@media screen and (max-width: 1229px) {
+  .header .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main .container .main-image .main-curve {
+    left: 45%;
+  }
+  .aboutSection .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-description {
+    margin-left: 140px;
+  }
+  .why .container .why-advantages .advantage:first-child {
+    margin-left: 60px;
+  }
+  .unique-places .container .unique-content .unique-info {
+    margin-left: 130px !important;
+  }
+  .unique-places .container .unique-content .unique-info p {
+    width: 325px;
+  }
+  .tour-program {
+    padding: 60px 15px 120px 15px;
+  }
+  .tour-program .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .tour-program .container .tour-program-content .tour-program-info {
+    margin-left: 160px;
+  }
+  .tour-program .container .tour-program-content .tour-program-info h5 {
+    height: 50px;
+  }
+  .tour-program .container .tour-program-content .tour-program-info p {
+    height: 200px;
+  }
+  .photogallery {
+    padding-top: 100px;
+  }
+  .photogallery .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .owl-carousel .item a:first-child {
+    margin-top: 50px;
+    transform: scale(0.6);
+  }
+  .owl-carousel .item a:nth-child(2) {
+    left: -20px;
+    margin-bottom: 30px;
+  }
+  .owl-carousel .item a:nth-child(3) {
+    width: 300px;
+    height: 180px;
+    left: 20px;
+    top: 20px;
+  }
+  .owl-carousel .item a:nth-child(4) {
+    left: -160px;
+    top: 30px;
+    width: 208px;
+    height: 145px;
+  }
+  .owl-carousel .item a:nth-child(5) {
+    left: -160px;
+    transform: scale(0.6);
+  }
+  .footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navBtn {
+    margin-bottom: 35px;
+  }
+}
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+  .main .container .main-book .main-title {
+    font-size: 50px;
+  }
+  .main .container .main-book .main-text {
+    font-size: 35px;
+  }
+  .main .container .main-image .main-curve {
+    top: 390px;
+    left: 100px;
+  }
+  .aboutSection {
+    padding-top: 60px;
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-image {
+    margin-left: -40px;
+    transform: scale(0.7);
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-description {
+    margin-left: 60px;
+    max-width: 300px;
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-description h3 {
+    margin-top: 30px;
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-description .ice-n-fire-text {
+    max-width: 100%;
+  }
+  .aboutSection .unique-places .container .unique-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-map {
+    justify-self: center;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-info {
+    margin-left: 0;
+    justify-self: center;
+  }
+  .tour-program {
+    padding-bottom: 100px;
+  }
+  .tour-program .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .tour-program .container .tour-program-content {
+    position: relative;
+    display: unset;
+  }
+  .tour-program .container .tour-program-content .tour-program-image {
+    position: absolute;
+    top: 150px;
+  }
+  .tour-program .container .tour-program-content .tour-program-info {
+    margin-left: 0;
+  }
+  .tour-program .container .tour-program-content .tour-program-info h5 {
+    margin-bottom: 500px;
+  }
+  .tour-program .container .tour-program-content .tour-program-info p {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .feedback .container .feedback-info {
+    width: 280px;
+  }
+  .feedback .container .feedback-info .review-text {
+    max-width: 95%;
+  }
+}
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+  .header .container {
+    position: relative;
+  }
+  .header .container .menu .close {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+    color: #fff;
+    font-size: 30px;
+  }
+  .header .container .menu ul {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(44, 44, 44, 0.7725490196);
+    z-index: 10;
+  }
+  .header .container .menu ul li a {
+    color: #fff;
+    font-weight: 700;
+  }
+  .header .container .trigram {
+    display: unset;
+    color: #2c2c2c;
+    font-size: 25px;
+  }
+  .main .container {
+    display: block;
+    background-image: url("../../images/h_waifu2x_photo_noise3_scale_waifu2x_photo_noise3_scale.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 600px;
+  }
+  .main .container .main-book .main-title {
+    max-width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+  .main .container .main-book .main-text {
+    position: absolute;
+    top: 920px;
+    left: calc(50% - 100px);
+    width: 200px;
+    text-align: center;
+    margin-left: 0;
+    font-size: 20px;
+  }
+  .main .container .main-book .main-button {
+    position: absolute;
+    top: 1330px;
+    left: calc(50% - 100px);
+  }
+  .main .container .main-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .main .container .main-image .watch-video-link {
+    position: absolute;
+    top: -300px;
+    margin: 0 auto;
+  }
+  .main .container .main-image img {
+    display: none;
+  }
+  .main .container .main-image .main-curve {
+    position: absolute;
+    left: calc(50% - 180px);
+    top: 530px;
+  }
+  .main .container .main-image .main-curve .curve_vacant {
+    position: absolute;
+    width: 70px;
+    top: -70px;
+  }
+  .aboutSection {
+    position: relative;
+  }
+  .aboutSection .container .ice-n-fire {
+    padding-bottom: 100px;
+    display: block;
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-image {
+    position: absolute;
+    left: calc(50% - 180px);
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-description {
+    margin: 0 auto;
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-description h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 400px;
+    font-size: 23px;
+  }
+  .aboutSection .why {
+    overflow: hidden;
+    position: relative;
+  }
+  .aboutSection .why .container .title h3 {
+    font-size: 25px;
+  }
+  .aboutSection .why .container .why-advantages {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutSection .why .container .why-advantages .advantage {
+    justify-self: center;
+    margin-left: 0;
+    position: unset;
+  }
+  .aboutSection .why .container .why-advantages .adv02 {
+    margin-top: 70px;
+    left: -50px;
+  }
+  .aboutSection .why .container .why-advantages .adv03 {
+    margin-top: -30px;
+  }
+  .aboutSection .why .container .why-advantages .adv04 {
+    margin-top: 80px;
+    max-width: 290px;
+  }
+  .aboutSection .why .big-curve {
+    display: none;
+  }
+  .aboutSection .why .second-curve {
+    display: unset;
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 570px);
+    transform: scale(1.2);
+  }
+  .aboutSection .unique-places .container h3 {
+    margin-bottom: 0;
+  }
+  .aboutSection .unique-places .container .unique-content {
+    justify-content: center;
+    margin-right: 0;
+    max-width: 350px;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-map {
+    margin-left: 30px;
+    align-items: center;
+    transform: scale(0.7);
+  }
+  .aboutSection .unique-places .container .unique-content .unique-info {
+    transform: scale(0.8);
+  }
+  .tour-program .container .tour-program-title {
+    font-size: 23px;
+  }
+  .tour-program .container .tour-program-content .tour-program-image {
+    align-self: center;
+    transform: scale(0.7);
+    left: -55px;
+    top: 100px;
+  }
+  .tour-program .container .tour-program-content .tour-program-info h5 {
+    margin-bottom: 400px;
+  }
+  .feedback .container {
+    position: relative;
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 50px;
+  }
+  .feedback .container .feedback-info .review-text {
+    margin-right: 0;
+    margin-bottom: 500px;
+  }
+  .feedback .container .feedback-image {
+    position: absolute;
+    padding: 15px;
+    top: 450px;
+  }
+  .feedback .container .feedback-image img {
+    width: 100%;
+  }
+  .owl-carousel {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  .owl-carousel .item {
+    display: block;
+    height: 200px;
+  }
+  .owl-carousel .item a {
+    position: relative;
+  }
+  .owl-carousel .item a:first-child {
+    transform: scale(1.1);
+  }
+  .owl-carousel .item a:nth-child(2) {
+    display: none;
+  }
+  .owl-carousel .item a:nth-child(3) {
+    display: none;
+  }
+  .owl-carousel .item a:nth-child(4) {
+    display: none;
+  }
+  .owl-carousel .item a:nth-child(5) {
+    display: none;
+  }
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+  }
+}
+/* 375 - 424 */
+@media screen and (max-width: 424px) {
+  .main .container .main-image .main-curve {
+    transform: scale(0.9);
+  }
+  .aboutSection {
+    padding-bottom: 50px;
+  }
+  .aboutSection .unique-places .container .unique-content {
+    grid-template-rows: auto auto;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-info {
+    margin: 0 !important;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-info p {
+    margin-bottom: 70px;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-info .unique-map {
+    width: 300px;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-info .unique-info-image {
+    margin-left: 120px;
+  }
+}
+/* 320 - 374 */
+@media screen and (max-width: 424px) {
+  .main .container .main-image .main-curve {
+    left: 0;
+    width: 120px;
+  }
+  .main .container .main-image .main-curve .curve_vacant {
+    left: 240px;
+  }
+  .main .container .main-image .main-curve svg {
+    width: 290px;
+  }
+  .aboutSection {
+    padding-bottom: 0;
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-image {
+    top: 10px;
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-image .ice-n-fire-image-background {
+    transform: scale(0.8);
+  }
+  .aboutSection .container .ice-n-fire .ice-n-fire-description h3 {
+    margin-bottom: 300px;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-map {
+    transform: scale(0.6);
+    margin-left: 0;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-info h4,
+  .aboutSection .unique-places .container .unique-content .unique-info p {
+    margin-left: 40px;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-info p {
+    margin-bottom: 20px;
+  }
+  .aboutSection .unique-places .container .unique-content .unique-info .unique-info-image {
+    transform: scale(0.8);
+    margin-left: 85px;
+  }
+  .tour-program .container .tour-program-content .tour-program-image {
+    left: -85px;
+    transform: scale(0.6);
+  }
+  .feedback .container .feedback-info .review-text {
+    margin-bottom: 400px;
+    width: 100%;
+  }
+  .book-your-trip .book-title {
+    font-size: 25px;
+  }
+  .book-your-trip .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

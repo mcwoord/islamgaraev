@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iceland journey</title>
+    <link rel="icon" href="images/iceland-country-svgrepo-com.png">
+    <link rel="stylesheet" href="src/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="src/css/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="src/css/raw.githubusercontent.com_dimsemenov_Magnific-Popup_master_dist_magnific-popup.css">
+    <link rel="stylesheet" href="src/css/cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.min.css">
+    <link rel="stylesheet" href="src/css/cdn.jsdelivr.net_npm_sweetalert2@11.7.3_dist_sweetalert2.min.css">
+    <link rel="stylesheet" href="dist/styles.min.css">
+
+
+
+
+    <script src="src/js/data.js"></script>
+
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#header">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="139px"
+                        height="30px">
+                        <image x="0px" y="0px" width="139px" height="30px"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#aboutSection">Об Исландии</a>
+                    </li>
+                    <li>
+                        <a href="#tourProgram">Программа</a>
+                    </li>
+                    <li>
+                        <a href="#feedback">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#photogallery">Фотогалерея</a>
+                    </li>
+                </ul>
+                <div class="close" id="btnClose">✕</div>
+            </div>
+            <div class="trigram" id="trigram">☰</div>
+        </div>
+    </div>
+    <section class="main">
+        <div class="container">
+            <div class="main-book">
+                <h1 class="main-title">Путешествие в Исландию</h1>
+                <h3 class="main-text">Авторский тур в страну льда</h3>
+                <button type="button" class="main-button"><span>Забронировать</span><span>></span></button>
+            </div>
+            <div class="main-image">
+                <div class="watch-video-link main-link">
+                    <a href="#tour-video">
+                        <div class="watch-video-link-icon video-icon">▶</div>
+                        <div class="watch-video-link-icon video-text">Смотреть видео</div>
+                    </a>
+                </div>
+                <div class="main-curve">
+                    <div class="main-curve-text-block curve_date">
+                        <div class="main-curve-text">Дата</div>
+                        <div class="main-curve-text">17-24 ноября 2020</div>
+                    </div>
+                    <div class="main-curve-text-block curve_price">
+                        <div class="main-curve-text">Стоимость</div>
+                        <div class="main-curve-text">1700 $</div>
+                    </div>
+                    <div class="main-curve-text-block curve_vacant">
+                        <div class="main-curve-text">Осталось мест</div>
+                        <div class="main-curve-text">7 мест</div>
+                    </div>
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+                    <svg width="79.823624mm" height="29.397247mm" viewBox="0 0 79.823624 29.397247" version="1.1"
+                        id="svg5" xml:space="preserve" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <defs id="defs2" />
+                        <g inkscape:label="Слой 1" inkscape:groupmode="layer" id="layer1"
+                            transform="translate(-31.732896,-84.562734)">
+                            <path fill-rule="evenodd" stroke="#2c2c2c" stroke-width="0.5px" stroke-linecap="butt"
+                                stroke-linejoin="miter" fill="none"
+                                d="m 33.032894,112.65998 c 0,0 7.14084,-18.190899 17.197917,-18.785418 0,0 16.268964,-6.946106 21.43125,-1.5875 0,0 3.439583,2.049727 5.027083,7.672916 0,0 1.055423,4.563002 5.027083,6.350002 0,0 18.517923,11.57473 13.758334,-11.377085 0,0 -2.119577,-6.152356 7.937499,-2.910416 0,0 5.95022,0.72681 6.87917,-6.085417"
+                                id="path132" inkscape:export-filename="path132.svg" inkscape:export-xdpi="96"
+                                inkscape:export-ydpi="96" />
+                            <circle
+                                style="fill:#2c2c2c;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+                                id="path297" cx="33.032894" cy="112.65998" r="1.1" />
+                            <circle
+                                style="fill:#2c2c2c;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+                                id="path297-9" cx="54.613018" cy="92.003784" r="1.1" />
+                            <circle
+                                style="fill:#2c2c2c;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:stroke fill markers"
+                                id="path297-9-5" cx="110.25652" cy="85.862732" r="1.1" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="image">
+                    <img src="images/main-background.png" alt="Iceland view">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="aboutSection" id="aboutSection">
+        <div class="container">
+            <div class="ice-n-fire">
+                <div class="ice-n-fire-image">
+                    <div class="ice-n-fire-image-background">
+                        <img src="images/ice-n-fire.png" class="animate__animated wow animate__flipInX" alt="volcano">
+                    </div>
+                </div>
+                <div class="ice-n-fire-description">
+                    <h3>Страна льда и огня</h3>
+                    <div class="ice-n-fire-text">Исландия – это изолированный остров на краю Европы, поражающий
+                        невероятными контрастами:
+                        кипящие
+                        гейзеры и тысячелетние ледники, активные вулканы и ревущие водопады, скалистые фьорды и
+                        живописные
+                        национальные парки. Исландии есть чем удивить даже самого бывалого туриста.</div>
+                </div>
+            </div>
+        </div>
+        <div class="why">
+            <div class="container">
+                <div class="title">
+                    <h3>Почему вы захотите поехать в
+                        тур именно с нами</h3>
+                </div>
+                <div class="why-advantages">
+                    <div class="advantage adv01">
+                        <div class="advantage-number">1</div>
+                        <div class="advantage-title">Крутая команда</div>
+                        <div class="advantage-text">
+                            В каждый тур едет сопровождающий и фотограф, а в каждом городе тебя ждёт локальный эксперт
+                            крутых мест
+                        </div>
+                    </div>
+                    <div class="advantage adv02">
+                        <div class="advantage-title">Свобода действий </div>
+                        <div class="advantage-text">
+                            Выбирай только те активности, которые нравятся и наслаждайся свободным временем в каждой
+                            точке
+                            маршрута
+                        </div>
+                        <div class="advantage-number">2</div>
+                    </div>
+                    <div class="advantage adv03">
+                        <div class="advantage-number">3</div>
+                        <div class="advantage-title">Транспорт</div>
+                        <div class="advantage-text">
+                            Мы арендуем 2-3 комфортных внедорожника на которых можно добраться до труднодоступных и
+                            невероятно красивых мест
+                        </div>
+                    </div>
+                    <div class="advantage adv04">
+                        <div class="advantage-title">Проживание</div>
+                        <div class="advantage-text">
+                            Вы будете располагаться в комфортном коттеджном комплексе на западе острова, включающим 12
+                            уютных дизайнерских домиков
+                        </div>
+                        <div class="advantage-number">4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="big-curve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2061.5px"
+                    height="571.5px">
+                    <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-dasharray="7, 7"
+                        stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                        d="M1.500,4.499 C1.500,4.499 103.307,-24.941 131.500,101.499 C159.692,227.939 200.307,268.059 265.500,276.499 C330.692,284.939 355.307,233.059 347.500,195.499 C339.692,157.939 222.307,109.060 289.500,83.499 C356.692,57.939 523.668,107.936 612.500,100.499 C694.500,93.634 780.500,120.060 737.500,198.499 C694.500,276.938 536.307,458.059 723.500,526.500 C910.693,594.939 959.167,563.892 979.500,520.499 C997.559,481.960 1092.307,298.059 1169.500,389.499 C1246.692,480.939 919.500,415.059 949.500,252.499 C979.500,89.939 1247.307,36.059 1308.500,179.499 C1369.692,322.938 1166.307,403.059 1234.500,505.499 C1302.692,607.938 1655.307,591.059 1694.500,428.499 C1733.692,265.939 1619.307,59.059 1806.500,179.499 C1993.692,299.939 2036.307,98.059 2059.500,4.499 " />
+                </svg>
+            </div>
+            <div class="second-curve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="899.5px"
+                    height="1003.5px">
+                    <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-dasharray="7, 7"
+                        stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                        d="M1.500,4.499 C1.500,4.499 103.307,-24.942 131.500,101.498 C159.692,227.938 200.307,268.059 265.500,276.499 C330.692,284.938 355.307,233.058 347.500,195.498 C339.692,157.938 222.307,109.059 289.500,83.499 C356.692,57.938 523.668,107.935 612.500,100.498 C694.500,93.633 792.872,134.329 733.582,221.322 C621.441,385.861 230.946,163.751 388.327,465.435 C434.316,553.590 654.386,464.753 679.500,453.499 C878.015,364.541 996.211,481.437 787.500,727.499 C722.762,803.823 358.863,866.358 389.975,705.737 C421.660,542.165 628.076,563.252 698.500,693.499 C892.463,1052.226 321.275,1089.916 328.500,845.499 " />
+                </svg>
+            </div>
+
+        </div>
+        <div class="unique-places">
+            <div class="container">
+                <h3>Уникальные места Исландии</h3>
+                <div class="unique-content">
+                    <div class="unique-map">
+                        <img src="images/Iceland-map.png" alt="">
+                    </div>
+                    <div class="unique-info">
+                        <h4>Голубая Лагуна</h4>
+                        <p>Один из самых известных и популярных термальных источников Исландии, который располагается в
+                            40 км от города Рейкьявик.</p>
+                        <div class="unique-info-image">
+                            <img src="images/unique-lady.png" class="animate__animated wow animate__flipInX" alt="Lady">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour-video" id="tour-video">
+        <div class="watch-video-link" target="_blank">
+            <a href="https://youtu.be/Pbzn79TSRO0" target="_blank">
+                <div class="watch-video-link-icon video-icon">▶</div>
+                <div class="watch-video-link-icon video-text">Смотреть видео</div>
+            </a>
+        </div>
+    </section>
+
+    <section class="tour-program" id="tourProgram">
+        <div class="container">
+            <h3 class="tour-program-title">Программа тура</h3>
+            <div class="tour-program-content">
+                <div class="tour-program-image">
+                    <img src="images/sheeps.png" alt="Tour image" id="tourImage">
+                </div>
+                <div class="tour-program-info">
+                    <h4><span></span></h4>
+                    <h5>Познакомимся с исландскими овечками</h5>
+                    <p>Мы отправимся в путешествие по одному из самых необычных туристических маршрутов Исландии —
+                        Золотому кольцу. Овeчки будут вaшими пocтoянными
+                        cпутникaми. Ha пoляx и в кeмпингax, в гopныx дoлинax и пpямo пocpeди тpacc — кудa бы вы ни
+                        пoexaли, вaм будут вcтpeчaтьcя бpoдящиe caми пo ceбe oвeчки c
+                        бapaшкaми.</p>
+
+                    <div class="tour-program-actions">
+                        <button type="button" class="navBtn btn-left" id="btnLeft">⟵</button>
+                        <button type="button" class="navBtn btn-right" id="btnRight">⟶</button>
+                        <div class="download-program">
+                            <img src="images/download.png" alt="">
+                            <a href="./src/files/Iceland-tour-program.pdf" target="_blank">Скачать программу тура</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="feedback" id="feedback">
+        <h3 class="feedback-title">Отзывы</h3>
+        <div class="container animate__animated" id="animated-card">
+            <div class="feedback-info">
+                <div class="person-name"></div>
+                <div class="review-number"></div>
+                <div class="review-text"></div>
+                <div class="feedback-actions">
+                    <button type="button" class="revBtn btn-left" id="revBtnLeft">⟵</button>
+                    <button type="button" class="revBtn btn-right" id="revBtnRight">⟶</button>
+                </div>
+            </div>
+            <div class="feedback-image">
+                <img src="images/feedback01.png" alt="Feedback images">
+            </div>
+        </div>
+    </section>
+
+    <section class="photogallery" id="photogallery">
+        <div class="container">
+            <h3 class="photogallery-title">Фотогалерея</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="images/gallery01.png" class="image-link first-image"><img class="first image"
+                            src="images/gallery01.png" alt="Photogallery"></a>
+                    <a href="images/gallery02.png" class="image-link second-image"><img class="first image"
+                            src="images/gallery02.png" alt="Photogallery"></a>
+                    <a href="images/gallery05.png" class="image-link third-image"><img class="first image"
+                            src="images/gallery05.png" alt="Photogallery"></a>
+                    <a href="images/gallery03.png" class="image-link fourth-image"><img class="first image"
+                            src="images/gallery03.png" alt="Photogallery"></a>
+                    <a href="images/gallery04.png" class="image-link fifth-image"><img class="first image"
+                            src="images/gallery04.png" alt="Photogallery"></a>
+                </div>
+                <div class="item">
+                    <a href="images/gallery01.png" class="image-link first-image"><img class="first image"
+                            src="images/gallery01.png" alt="Photogallery"></a>
+                    <a href="images/gallery02.png" class="image-link second-image"><img class="first image"
+                            src="images/gallery02.png" alt="Photogallery"></a>
+                    <a href="images/gallery05.png" class="image-link third-image"><img class="first image"
+                            src="images/gallery05.png" alt="Photogallery"></a>
+                    <a href="images/gallery03.png" class="image-link fourth-image"><img class="first image"
+                            src="images/gallery03.png" alt="Photogallery"></a>
+                    <a href="images/gallery04.png" class="image-link fifth-image"><img class="first image"
+                            src="images/gallery04.png" alt="Photogallery"></a>
+                </div>
+                <div class="item">
+                    <a href="images/gallery01.png" class="image-link first-image"><img class="first image"
+                            src="images/gallery01.png" alt="Photogallery"></a>
+                    <a href="images/gallery02.png" class="image-link second-image"><img class="first image"
+                            src="images/gallery02.png" alt="Photogallery"></a>
+                    <a href="images/gallery05.png" class="image-link third-image"><img class="first image"
+                            src="images/gallery05.png" alt="Photogallery"></a>
+                    <a href="images/gallery03.png" class="image-link fourth-image"><img class="first image"
+                            src="images/gallery03.png" alt="Photogallery"></a>
+                    <a href="images/gallery04.png" class="image-link fifth-image"><img class="first image"
+                            src="images/gallery04.png" alt="Photogallery"></a>
+                </div>
+                <div class="item">
+                    <a href="images/gallery01.png" class="image-link first-image"><img class="first image"
+                            src="images/gallery01.png" alt="Photogallery"></a>
+                    <a href="images/gallery02.png" class="image-link second-image"><img class="first image"
+                            src="images/gallery02.png" alt="Photogallery"></a>
+                    <a href="images/gallery05.png" class="image-link third-image"><img class="first image"
+                            src="images/gallery05.png" alt="Photogallery"></a>
+                    <a href="images/gallery03.png" class="image-link fourth-image"><img class="first image"
+                            src="images/gallery03.png" alt="Photogallery"></a>
+                    <a href="images/gallery04.png" class="image-link fifth-image"><img class="first image"
+                            src="images/gallery04.png" alt="Photogallery"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="book-your-trip">
+        <h3 class="book-title">Забронировать путешествие</h3>
+        <div class="container">
+            <div class="number-of-persons">Количество человек</div>
+            <div class="button-block">
+                <button type="button">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+                <button type="button">4</button>
+                <button type="button">5</button>
+                <button type="button">6</button>
+                <button type="button">7+</button>
+            </div>
+            <input type="text" class="book-input" id="yourName" placeholder="Ваше имя">
+            <input type="tel" class="book-input" id="yourPhoneNumber" placeholder="Ваш телефон">
+            <button type="button" id="sendRequest">Отправить заявку</button>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#header">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="139px"
+                        height="30px">
+                        <image x="0px" y="0px" width="139px" height="30px"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </a>
+            </div>
+            <div class="socials">
+                <a href="https://vk.com/" class="vk-social" target="_blank">
+                    <img src="images/vk-social-logotype.png" alt="VK Logo">
+                </a>
+                <a href="https://www.instagram.com/" class="inst-social" target="_blank">
+                    <img src="images/instagram.png" alt="instagram logo">
+                </a>
+                <a href="https://web.telegram.org/k/" class="tg-social" target="_blank">
+                    <img src="images/telegram.png" alt="Telegram logo">
+                </a>
+            </div>
+            <div class="phone-number">
+                <a href="tel:+ 375 29 47-09-788">+ 375 29 47-09-788</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="src/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script
+        src="src/js/raw.githubusercontent.com_dimsemenov_Magnific-Popup_master_dist_jquery.magnific-popup.min.js"></script>
+    <script src="src/js/owl.carousel.min.js"></script>
+    <script src="src/js/jquery.inputmask.min.js"></script>
+    <script src="src/js/cdn.jsdelivr.net_npm.js"></script>
+    <script src="src/js/raw.githubusercontent.com_graingert_WOW_master_dist_wow.min.js"></script>
+    <script src="src/js/index.js"></script>
+
+</body>
+
+</html>
