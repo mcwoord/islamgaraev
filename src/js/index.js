@@ -1,7 +1,4 @@
 var card = $('.card');
-card.hide();
-card.css('opacity', '0');
-card.show();
 
 
 $(document).ready(function () {
@@ -21,18 +18,18 @@ $(document).ready(function () {
         scale: 1.1
     })
 
-    function delay(ms) {
-        return new Promise((resolve) => setTimeout(resolve, ms));
-    }
-    async function PromiseTimeOut() {
-        console.log("Старт");
-        for (let i = 0; i < card.length; i++) {
-            card.eq(i).css('opacity', '1');
-            await delay(100); // ждем одну секунду перед выполнением следующей итерации цикла
-        }
-        console.log("Цикл завершен!");
-    }
-    PromiseTimeOut()
+    // function delay(ms) {
+    //     return new Promise((resolve) => setTimeout(resolve, ms));
+    // }
+    // async function PromiseTimeOut() {
+    //     console.log("Старт");
+    //     for (let i = 0; i < card.length; i++) {
+    //         card.eq(i).css('opacity', '1');
+    //         await delay(100); // ждем одну секунду перед выполнением следующей итерации цикла
+    //     }
+    //     console.log("Цикл завершен!");
+    // }
+    // // PromiseTimeOut()
 
 
 
