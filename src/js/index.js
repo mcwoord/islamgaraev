@@ -1,7 +1,8 @@
 var card = $('.card');
-
-
 $(document).ready(function () {
+    let screenWidth = window.screen.width;
+    
+    
 
     let messageSent = $('#messageSent');
     let messageNotSent = $('#messageNotSent');
@@ -10,26 +11,17 @@ $(document).ready(function () {
     $('.modal-background').hide();
     $('.modal-form-background').hide();
     $('.close').hide();
+    
+    if (screenWidth > 767) {
+        $('.card').tilt({
+            glare: true,
+            maxGlare: 0.2,
+            maxTilt: 1,
+            scale: 1.1
+        })
+    }
 
-    $('.card').tilt({
-        glare: true,
-        maxGlare: 0.2,
-        maxTilt: 5,
-        scale: 1.1
-    })
-
-    // function delay(ms) {
-    //     return new Promise((resolve) => setTimeout(resolve, ms));
-    // }
-    // async function PromiseTimeOut() {
-    //     console.log("Старт");
-    //     for (let i = 0; i < card.length; i++) {
-    //         card.eq(i).css('opacity', '1');
-    //         await delay(100); // ждем одну секунду перед выполнением следующей итерации цикла
-    //     }
-    //     console.log("Цикл завершен!");
-    // }
-    // // PromiseTimeOut()
+    
 
 
 
@@ -43,18 +35,6 @@ $(document).ready(function () {
         $('.close').show();
 
     })
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
