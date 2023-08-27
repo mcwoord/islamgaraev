@@ -57,6 +57,7 @@ $backgroundGrey: #F7F6F5;
             gap: 10px;
             justify-content: center;
             cursor: pointer;
+            z-index: 1;
 
             .card {
                 transition: 0.5s ease;

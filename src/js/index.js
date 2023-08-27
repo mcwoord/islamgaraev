@@ -1,5 +1,5 @@
-var card = $('.card');
 $(document).ready(function () {
+    let card = $('.card');
     let screenWidth = window.screen.width;
     
     
@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.close').hide();
     
     if (screenWidth > 767) {
-        $('.card').tilt({
+        card.tilt({
             glare: true,
             maxGlare: 0.2,
             maxTilt: 1,
@@ -31,7 +31,7 @@ $(document).ready(function () {
     })
 
     $('.cardNumber02').click(function () {
-        $('.modal-background').show();
+        $('.modal-background').show().css({zIndex: '100'});
         $('.close').show();
 
     })
@@ -121,7 +121,7 @@ $(document).ready(function () {
 
 
 
-
+    // Name effect
     var TxtRotate = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
