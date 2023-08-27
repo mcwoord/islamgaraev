@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url(../../11-Создание-проекта-с-нуля/src/fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
 .header {
   padding: 35px 0;
@@ -80,6 +80,7 @@
   color: #ffffff;
   border: 0;
   cursor: pointer;
+  text-decoration: none;
 }
 .main .container .main-image {
   position: relative;
@@ -489,7 +490,7 @@
 .book-your-trip {
   padding-top: 80px;
   padding-bottom: 120px;
-  background-image: url("../../11-Создание-проекта-с-нуля/images/book-background.png");
+  background-image: url("../../images/book-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -598,7 +599,7 @@
 }
 
 .tour-video {
-  background-image: url("../../11-Создание-проекта-с-нуля/images/video-background.png");
+  background-image: url("../../images/video-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -692,6 +693,10 @@
 
 .swal2-popup {
   font-family: "Montserrat", sans-serif;
+}
+
+.modal-form iframe {
+  z-index: 15;
 }
 
 @keyframes curveSnake {
@@ -899,7 +904,7 @@
   }
   .main .container {
     display: block;
-    background-image: url("../../11-Создание-проекта-с-нуля/images/h_waifu2x_photo_noise3_scale_waifu2x_photo_noise3_scale.png");
+    background-image: url("../../images/h_waifu2x_photo_noise3_scale_waifu2x_photo_noise3_scale.png");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -949,6 +954,7 @@
   }
   .aboutSection {
     position: relative;
+    padding-bottom: 50px;
   }
   .aboutSection .container .ice-n-fire {
     padding-bottom: 100px;
@@ -1016,9 +1022,12 @@
     margin-left: 30px;
     align-items: center;
     transform: scale(0.7);
+    height: 250px;
+    flex: 0;
   }
   .aboutSection .unique-places .container .unique-content .unique-info {
     transform: scale(0.8);
+    margin-top: -50px;
   }
   .tour-program .container .tour-program-title {
     font-size: 23px;
@@ -1037,15 +1046,18 @@
     flex-direction: column;
     padding: 15px;
     padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 90%;
   }
   .feedback .container .feedback-info .review-text {
     margin-right: 0;
-    margin-bottom: 500px;
+    margin-bottom: 370px;
+    max-width: 90%;
   }
   .feedback .container .feedback-image {
     position: absolute;
     padding: 15px;
-    top: 450px;
+    top: 350px;
   }
   .feedback .container .feedback-image img {
     width: 100%;
@@ -1104,6 +1116,16 @@
   }
   .aboutSection .unique-places .container .unique-content .unique-info .unique-info-image {
     margin-left: 120px;
+  }
+  .feedback .container .feedback-info .review-text {
+    margin-bottom: 300px !important;
+    max-width: 90%;
+  }
+  .feedback .container .feedback-image {
+    top: 330px;
+  }
+  .feedback .container .feedback-image img {
+    width: 100%;
   }
 }
 /* 320 - 374 */

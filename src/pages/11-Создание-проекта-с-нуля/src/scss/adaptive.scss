@@ -369,6 +369,7 @@
 
     .aboutSection {
         position: relative;
+        padding-bottom: 50px;
 
         .container {
             .ice-n-fire {
@@ -462,10 +463,13 @@
                         margin-left: 30px;
                         align-items: center;
                         transform: scale(0.7);
+                        height: 250px;
+                        flex: 0;
                     }
 
                     .unique-info {
                         transform: scale(0.8);
+                        margin-top: -50px;
                     }
                 }
             }
@@ -504,18 +508,22 @@
             flex-direction: column;
             padding: 15px;
             padding-top: 50px;
+            padding-bottom: 50px;
+            max-width: 90%;
 
             .feedback-info {
+                // max-width: 90%;
                 .review-text {
                     margin-right: 0;
-                    margin-bottom: 500px;
+                    margin-bottom: 370px;
+                    max-width: 90%;
                 }
             }
 
             .feedback-image {
                 position: absolute;
                 padding: 15px;
-                top: 450px;
+                top: 350px;
 
                 img {
                     width: 100%;
@@ -604,6 +612,28 @@
                             margin-left: 120px;
                         }
                     }
+                }
+            }
+        }
+    }
+    
+    .feedback {
+        .container {
+
+            .feedback-info {
+                .review-text {
+                    
+                    margin-bottom: 300px  !important;
+                    max-width: 90%;
+                }
+            }
+
+            .feedback-image {
+                top: 330px;
+
+                img {
+                    width: 100%;
+
                 }
             }
         }

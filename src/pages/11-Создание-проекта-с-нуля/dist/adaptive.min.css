@@ -242,6 +242,7 @@
   }
   .aboutSection {
     position: relative;
+    padding-bottom: 50px;
   }
   .aboutSection .container .ice-n-fire {
     padding-bottom: 100px;
@@ -309,9 +310,12 @@
     margin-left: 30px;
     align-items: center;
     transform: scale(0.7);
+    height: 250px;
+    flex: 0;
   }
   .aboutSection .unique-places .container .unique-content .unique-info {
     transform: scale(0.8);
+    margin-top: -50px;
   }
   .tour-program .container .tour-program-title {
     font-size: 23px;
@@ -330,15 +334,18 @@
     flex-direction: column;
     padding: 15px;
     padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 90%;
   }
   .feedback .container .feedback-info .review-text {
     margin-right: 0;
-    margin-bottom: 500px;
+    margin-bottom: 370px;
+    max-width: 90%;
   }
   .feedback .container .feedback-image {
     position: absolute;
     padding: 15px;
-    top: 450px;
+    top: 350px;
   }
   .feedback .container .feedback-image img {
     width: 100%;
@@ -397,6 +404,16 @@
   }
   .aboutSection .unique-places .container .unique-content .unique-info .unique-info-image {
     margin-left: 120px;
+  }
+  .feedback .container .feedback-info .review-text {
+    margin-bottom: 300px !important;
+    max-width: 90%;
+  }
+  .feedback .container .feedback-image {
+    top: 330px;
+  }
+  .feedback .container .feedback-image img {
+    width: 100%;
   }
 }
 /* 320 - 374 */
