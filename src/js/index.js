@@ -19,6 +19,12 @@ $(document).ready(function () {
             maxTilt: 5,
             scale: 1.1
         })
+    } else {
+        card.tilt({
+            glare: false,
+            maxTilt: 0,
+            scale: 1
+        })
     }
 
     
