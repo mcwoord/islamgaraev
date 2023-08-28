@@ -16,7 +16,7 @@ $(document).ready(function () {
         card.tilt({
             glare: true,
             maxGlare: 0.2,
-            maxTilt: 1,
+            maxTilt: 5,
             scale: 1.1
         })
     }
